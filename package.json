@@ -2,12 +2,12 @@
   "name": "react-minimal-boilerplate",
   "version": "0.1.0",
   "description": "The bare minimum you need to start a React project. Using babel, eslint and mocha.",
-  "main": "index.js",
   "scripts": {
     "start": "node bin/server.babel.js",
     "lint": "eslint src",
     "test": "mocha './src/**/*.spec.js' --compilers js:babel-core/register --reporter dot"
   },
+  "repository": "https://github.com/diogobeda/react-minimal-boilerplate.git",
   "keywords": [
     "react",
     "minimum",
@@ -17,7 +17,7 @@
     "eslint",
     "mocha"
   ],
-  "author": "Diogo Beda <diogo.fbeda@gmail.com>",
+  "author": "Diogo Beda <diogo.fbeda@gm.com>",
   "license": "ISC",
   "dependencies": {
     "react": "^0.14.6",
