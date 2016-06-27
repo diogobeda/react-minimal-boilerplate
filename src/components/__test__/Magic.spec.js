@@ -1,16 +1,12 @@
 import React from 'react';
-import { createRenderer } from 'react-addons-test-utils';
-import expect from 'expect';
-import expectJSX from 'expect-jsx';
+import { expect } from 'chai';
+import { shallow } from 'enzyme';
 import Magic from '../Magic';
-expect.extend(expectJSX);
 
 describe('Bare minimum', () => {
-  const renderer = createRenderer();
-
   it('should be ok', () => {
-    renderer.render(<Magic />);
-    expect(renderer.getRenderOutput()).toIncludeJSX(
+    const wrapper = shallow(<Magic />);
+    expect(wrapper.node).to.include(
       <h1>Magic happens here!</h1>
     );
   });
